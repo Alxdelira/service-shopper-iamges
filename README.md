@@ -107,6 +107,6 @@ Runs the app in the development mode.<br/>
 <br />
 <p align="center">
   <a href="https://portfolioalxdelira.vercel.app/" target="_blank">
-    <img align="center" src="src/assets/footer.png" alt="banner"/>
+    <img align="center" src="/Alxdelira/Alxdelira/raw/main/.github/assets/footer.png" alt="banner"/>
   </a>
 </p>
