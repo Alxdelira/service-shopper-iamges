@@ -28,8 +28,8 @@
   </p> 
 
   <!-- project description and menu -->
-  <p align="center">
-      🛠️ Em Construção...
+  <p align="center">Modelo de como será usado</p>
+       <img align="center" src="./assets/modeloUso.png" alt="banner"/>
     <br />
     <!-- <a 
       href="https://api-jfro.vercel.app/">
@@ -51,7 +51,10 @@
 
 
 ## 🔥 Features
-- [ ] Integração com o Google Gemini 🔥
+- [x] Integração com o Google Gemini 🔥
+- [x] Ler uma Imagem e busca os dados para salvar no banco
+- [x] Listar Todas as leituras por tipo e Codigo do cliente
+- [x] Confirmar a leitura com validações referente ao mês
 
 
 ## Technologies
@@ -67,6 +70,8 @@ This project was developed with the following technologies:
 - `tsup`: [tsup on NPM](https://www.npmjs.com/package/tsup)
 - `Swagger`: [swagger-UI on  GitHub](https://github.com/swagger-api/swagger-ui)
 - `Mongo DB`: [MongoDB](https://www.mongodb.com/pt-br)
+- `Multer`: [Express.Js - multer](https://github.com/expressjs/multer)
+- `GeminiAI`: [Gemini-AI on docs](https://ai.google.dev/gemini-api/docs)
 
 
 
@@ -75,12 +80,35 @@ This project was developed with the following technologies:
 You'll need [Node.js](https://nodejs.org) installed on your computer in order to build this app.
 
 ```bash
-git clone 
-$ cd 
-$ npm install
-$ npm run dist
+ git clone 
+ cd nome da pasta
+ npm install
+ npm run dist #Para efetuar o build
+
+#para Rodar Localmente use 
+ npm run watch
 ```
 
+## Siga o modelo do env.example use sua chave da API do GEMINI AI 👌
+
+```bash
+PORT= "use a porta que desejar"
+
+# URL do banco de dados MongoDB
+DB_SHOPPER_URL=" Url do Banco de sua escolha ( usei MongoDB )"
+
+# Variáveis de configuração do MongoDB para o container Docker
+DB_SHOPPER_EXPOSE_PORT=" Aqui escolhi a porta padrão do Mongo"
+DB_SHOPPER_USERNAME="USER"
+DB_SHOPPER_PASSWORD="PASSWORD"
+DB_SHOPPER_DATABASE=" Nome do Database" 
+
+# Configuração de idioma e fuso horário
+LANG=en_US.UTF-8
+TZ=America/Porto_Velho  #Usando o horario da minha região
+
+GEMINI_API_KEY="API_KEY"
+````
 
 ## Usage
 
@@ -96,7 +124,7 @@ Runs the app in the development mode.<br/>
 ## Autor
 
 | [<img width="150px"  src="https://avatars.githubusercontent.com/u/102405026?v=4"><br><sub>Alexandre Nogueira</sub>](https://github.com/Alxdelira) |
-| :---------------------------------------------------------------------------------------------------------------------------------------: |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------: |
 <a target="_blank" href="https://www.linkedin.com/in/alxdelira/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 
 <br />
