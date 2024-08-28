@@ -21,10 +21,10 @@
       alt="Project top programing language" 
       src="https://img.shields.io/github/languages/top/Alxdelira/api-jfro?color=6A57D5"
     >
-    <!-- <img 
+    <img 
       alt="GitHub license" 
-      src="https://img.shields.io/github/license/Alxdelira/api-jfro?color=6A57D5"
-    > -->
+      src="https://img.shields.io/github/license/Alxdelira/service-shopper-iamges?color=6A57D5"
+    >
   </p> 
 
   <!-- project description and menu -->
