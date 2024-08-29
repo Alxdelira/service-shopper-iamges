@@ -9,7 +9,7 @@
   <p align="center">   
     <img 
       alt="Último commit no GitHub" 
-      src="https://img.shields.io/github/last-commit/Alxdelira/service-shopper-images?color=6A57D5"
+      src="https://img.shields.io/github/last-commit/Alxdelira/service-shopper-iamges?color=6A57D5"
     >   
     <img 
       alt="Feito por Alexandre Nogueira" 
@@ -17,11 +17,11 @@
     >
     <img 
       alt="Linguagem de programação principal" 
-      src="https://img.shields.io/github/languages/top/Alxdelira/service-shopper-images?color=6A57D5"
+      src="https://img.shields.io/github/languages/top/Alxdelira/service-shopper-iamges?color=6A57D5"
     >
     <img 
       alt="Licença do GitHub" 
-      src="https://img.shields.io/github/license/Alxdelira/service-shopper-images?color=6A57D5"
+      src="https://img.shields.io/github/license/Alxdelira/service-shopper-iamges?color=6A57D5"
     >
   </p>
 
@@ -58,7 +58,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 Você precisará do [Node.js](https://nodejs.org) instalado em seu computador para rodar este projeto.
 
 ```bash
-git clone https://github.com/Alxdelira/service-shopper-images
+git clone https://github.com/Alxdelira/service-shopper-iamges
 cd nome-da-pasta
 npm install
 npm run dist
