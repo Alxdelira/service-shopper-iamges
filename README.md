@@ -1,65 +1,45 @@
 <div align="center">
- <img 
-      alt="Project programing languages count" 
+  <img 
+      alt="Project programming languages count" 
       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTevuK6TdTHsn-BiH-SH3l7DBL42A5nX7oVWw&s"
       width="200px"
-    >  
-  <!-- project name -->
-  <h1 align="center">Micro Service de Leitura de Imagens</h1>
-  
-  <!-- project badges -->
+  >  
+  <h1 align="center">Micro Serviço de Leitura de Imagens</h1>
+
   <p align="center">   
     <img 
-      alt="Last commit on GitHub" 
-      src="https://img.shields.io/github/last-commit/Alxdelira/api-jfro?color=6A57D5"
+      alt="Último commit no GitHub" 
+      src="https://img.shields.io/github/last-commit/Alxdelira/service-shopper-images?color=6A57D5"
     >   
     <img 
-      alt="Made by Alexandre Nogueira" 
+      alt="Feito por Alexandre Nogueira" 
       src="https://img.shields.io/badge/made%20by-Alexandre%20Nogueira-%20?color=6A57D5"
     >
     <img 
-      alt="Project top programing language" 
-      src="https://img.shields.io/github/languages/top/Alxdelira/api-jfro?color=6A57D5"
+      alt="Linguagem de programação principal" 
+      src="https://img.shields.io/github/languages/top/Alxdelira/service-shopper-images?color=6A57D5"
     >
     <img 
-      alt="GitHub license " 
-      src="https://img.shields.io/github/license/Alxdelira/service-shopper-iamges?color=6A57D5"
+      alt="Licença do GitHub" 
+      src="https://img.shields.io/github/license/Alxdelira/service-shopper-images?color=6A57D5"
     >
-  </p> 
-
-  <!-- project description and menu -->
-  <p align="center">Modelo de como será usado</p>
-       <img align="center" src="./assets/modeloUso.png" alt="banner"/>
-    <br />
-    <!-- <a 
-      href="https://api-jfro.vercel.app/">
-      <strong>Go to usage now »</strong>
-    </a> -->
-    <br />
-    <br />
-    <!-- <a 
-      href="https://github.com/Alxdelira/api-jfro/issues">
-      Report Bug
-    </a>
-    ·
-    <a 
-      href="https://github.com/Alxdelira/api-jfro/issues/new">
-      Request Feature
-    </a> -->
   </p>
+
+  <p align="center">Modelo de uso do projeto</p>
+  <img align="center" src="./assets/modeloUso.png" alt="banner"/>
+
 </div>
 
-
 ## 🔥 Features
+
 - [x] Integração com o Google Gemini 🔥
-- [x] Ler uma Imagem e busca os dados para salvar no banco
-- [x] Listar Todas as leituras por tipo e Codigo do cliente
-- [x] Confirmar a leitura com validações referente ao mês
+- [x] Ler uma imagem e buscar os dados para salvar no banco
+- [x] Listar todas as leituras por tipo e código do cliente
+- [x] Confirmar a leitura com validações referentes ao mês
 
+## 🛠️ Tecnologias
 
-## Technologies
-
-This project was developed with the following technologies:
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
 - `typescript`: [TypeScript on GitHub](https://github.com/microsoft/TypeScript)
 - `cors`: [npm cors](https://www.npmjs.com/package/cors)
@@ -68,22 +48,21 @@ This project was developed with the following technologies:
 - `mongoose`: [Mongoose on GitHub](https://github.com/Automattic/mongoose)
 - `mongoose-paginate-v2`: [npm mongoose-paginate-v2](https://www.npmjs.com/package/mongoose-paginate-v2)
 - `tsup`: [tsup on NPM](https://www.npmjs.com/package/tsup)
-- `Swagger`: [swagger-UI on  GitHub](https://github.com/swagger-api/swagger-ui)
+- `Swagger`: [swagger-UI on GitHub](https://github.com/swagger-api/swagger-ui)
 - `Mongo DB`: [MongoDB](https://www.mongodb.com/pt-br)
 - `Multer`: [Express.Js - multer](https://github.com/expressjs/multer)
 - `GeminiAI`: [Gemini-AI on docs](https://ai.google.dev/gemini-api/docs)
 
+## 🚀 Como Rodar o Projeto
 
-
-## Building
-
-You'll need [Node.js](https://nodejs.org) installed on your computer in order to build this app.
+Você precisará do [Node.js](https://nodejs.org) instalado em seu computador para rodar este projeto.
 
 ```bash
- git clone 
- cd nome da pasta
- npm install
- npm run dist #Para efetuar o build
+git clone https://github.com/Alxdelira/service-shopper-images
+cd nome-da-pasta
+npm install
+npm run dist
+
 
 #para Rodar Localmente use 
  npm run watch

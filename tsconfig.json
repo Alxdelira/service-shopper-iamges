@@ -4,6 +4,11 @@
     "module": "CommonJS", 
     "outDir": "./dist",             
     "strict": true,  
-    "esModuleInterop": true,
-  }                                
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "src/controllers/reader-images-controller.early.test/confirmImage.early.test.ts",
+    "src/controllers/reader-images-controller.early.test/getImage.early.test.ts",
+    "src/controllers/reader-images-controller.early.test/uploadImage.early.test.ts"
+  ]
 }
