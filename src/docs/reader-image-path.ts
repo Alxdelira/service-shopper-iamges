@@ -13,13 +13,12 @@ const readerPath = {
                                 customer_code: {
                                     type: "string",
                                     description: "Código único identificador do cliente.",
-                                    example: "CUST1234"
                                 },
                                 measure_type: {
                                     type: "string",
                                     enum: ["WATER", "GAS"],
                                     description: "Tipo de medição a ser realizada. Deve ser 'ÁGUA' ou 'GÁS'.",
-                                    example: "ÁGUA"
+                                    example: "WATER"
                                 },
                                 image: {
                                     type: "string",
@@ -120,7 +119,6 @@ const readerPath = {
                     description: "Código único identificador do cliente.",
                     schema: {
                         type: "string",
-                        example: "CUST1234"
                     }
                 },
                 {
@@ -129,7 +127,7 @@ const readerPath = {
                     description: "Tipo de medição para filtrar. Opcional. Deve ser 'ÁGUA' ou 'GÁS'.",
                     schema: {
                         type: "string",
-                        example: "ÁGUA"
+                        example: "WATER"
                     }
                 }
             ],
@@ -165,7 +163,7 @@ const readerPath = {
                                                 measure_type: {
                                                     type: "string",
                                                     description: "Tipo de medição.",
-                                                    example: "ÁGUA"
+                                                    example: "WATER"
                                                 },
                                                 has_confirmed: {
                                                     type: "boolean",
@@ -246,7 +244,7 @@ const readerPath = {
                                 measure_uuid: {
                                     type: "string",
                                     description: "UUID da medição a ser confirmada.",
-                                    example: "a12b34cd-56ef-78gh-90ij-klmnopqrstu1"
+                                    example: "Coloque aqui o UUID da medição."
                                 },
                                 confirmed_value: {
                                     type: "number",

@@ -59,16 +59,19 @@ Você precisará do [Node.js](https://nodejs.org) instalado em seu computador pa
 
 ```bash
 git clone https://github.com/Alxdelira/service-shopper-iamges
+cp .env.example .env # Necessario fazer a alteração do .env com suas configurações.
 cd nome-da-pasta
+
 npm install
-npm run dist
+
+npm run dist # No caso aqui efetua o biuld 
 
 
 #para Rodar Localmente use 
  npm run watch
 ```
 
-## Siga o modelo do env.example use sua chave da API do GEMINI AI 👌
+## 👌 Siga o modelo do env.example use sua chave da API do GEMINI AI 
 
 ```bash
 PORT= "use a porta que desejar"
@@ -82,25 +85,42 @@ DB_SHOPPER_USERNAME="USER"
 DB_SHOPPER_PASSWORD="PASSWORD"
 DB_SHOPPER_DATABASE=" Nome do Database" 
 
-# Configuração de idioma e fuso horário
-LANG=en_US.UTF-8
-TZ=America/Porto_Velho  #Usando o horario da minha região
 
-GEMINI_API_KEY="API_KEY"
+LANG=en_US.UTF-8 # Configuração de idioma e fuso horário
+TZ=America/Porto_Velho  # Usando o horario da minha região
+
+GEMINI_API_KEY="API_KEY" # Gerar a chave da API do GEMINI para usar 
+
 ````
 
-## Usage
+
+## 🤖 Uso em ambiente de desenvolvimento
+
+
 
 🔧 Run the script
 
 ```bash
-$ npm run dev
+npm run watch
+```
+Rodando em modo de desenvolvimento local.<br/>
+
+## 🛳️ Docker Compose 🐋
+
+Com docker compose basta executar:
+```bash
+cp .env.example .env
+docker compose up -d 
 ```
 
+> Faça o comando sem a opção `-d` caso queira travar o terminal e acompanhar o log da aplicação (E do banco)
 
-Runs the app in the development mode.<br/>
 
-## Autor
+
+
+
+
+##  🐐 Autor
 
 | [<img width="150px"  src="https://avatars.githubusercontent.com/u/102405026?v=4"><br><sub>Alexandre Nogueira</sub>](https://github.com/Alxdelira) |
 | :-----------------------------------------------------------------------------------------------------------------------------------------------: |

@@ -1,0 +1,11 @@
+node_modules
+coverage
+.git
+.dockerignore
+npm-debug.log
+Dockerfile
+Dockerfile.*
+docker-compose.json
+docker-compose.json.*
+README.md
+.editorconfig

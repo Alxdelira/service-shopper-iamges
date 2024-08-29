@@ -1,4 +1,5 @@
-
+# Não precisa por versão https://github.com/compose-spec/compose-spec/blob/master/spec.md#compose-file
+# Compose doesn't use version to select an exact schema to validate the Compose file, but prefers the most recent schema when it's implemented.
 
 services:
   mongo-shopper:
@@ -14,30 +15,31 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=${DB_SHOPPER_PASSWORD}
       - MONGO_INITDB_DATABASE=${DB_SHOPPER_DATABASE}
       - TZ=America/Porto_Velho
-    # networks:
-    #   - shopper-network
+    networks:
+      - shopper-network
 
-#   api-shopper:
-#     restart: unless-stopped
-#     container_name: api-shopper
-#     build:
-#       context: .
-#       args:
-#         - PORT=${PORT}
-#     ports:
-#       - "${PORT}:${PORT}"
-#     volumes:
-#       - ./data:/node-app/data
-#     environment:
-#       - PORT=${PORT}
-#       - DB_SHOPPER_URL=mongodb://${DB_SHOPPER_USERNAME}:${DB_SHOPPER_PASSWORD}@mongo-shopper:27017/${DB_SHOPPER_DATABASE}?authSource=admin
-#       - TZ=America/Porto_Velho
-#       - LANG=${LANG}
-#     networks:
-#       - shopper-network
+  api-shopper:
+    restart: unless-stopped
+    container_name: api-shopper
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT}:${PORT}"
+    volumes:
+      - ./data:/node-app/data
+    environment:
+      - PORT=${PORT}
+      - DB_SHOPPER_URL=mongodb://${DB_SHOPPER_USERNAME}:${DB_SHOPPER_PASSWORD}@mongo-shopper:27017/${DB_SHOPPER_DATABASE}?authSource=admin
+      - TZ=America/Porto_Velho
+      - LANG=${LANG}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    networks:
+      - shopper-network
 
 networks:
   shopper-network:
 
 volumes:
   vol-db:
+
